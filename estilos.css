@@ -178,6 +178,9 @@ header .navbar-collapse .desplegable .dropdown-item:hover {
 #timeline {
   display: flex;
   background-color: #031625;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #timeline:hover .tl-item {
   width: 23.3333%;
@@ -205,12 +208,12 @@ header .navbar-collapse .desplegable .dropdown-item:hover {
   height: 100%;
 }
 #timeline .tl-item:after {
-  background: rgba(3, 22, 37, 0.85);
+  background: rgba(4, 31, 51, 0.85);
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 #timeline .tl-item:before {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%);
+  background: linear-gradient(to bottom, rgba(177, 54, 54, 0) 0%, rgb(0, 0, 0) 75%);
   z-index: 1;
   opacity: 0;
   transform: translate3d(0, 0, 0) translateY(50%);
@@ -290,82 +293,6 @@ header .navbar-collapse .desplegable .dropdown-item:hover {
   font-family: Rajdhani;
 }
 
-/*-------------!LIGAS!-------------*/
-.cont3 {
-  background-image: url(./imgaltreno/1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 800px;
-  background-size: cover;
-}
-.cont3 .item9 {
-  height: 800px;
-  width: 30%;
-  background-color: rgba(255, 255, 255, 0.541);
-  float: left;
-}
-.cont3 .item9 p.texto9 {
-  color: #000000;
-  text-align: center;
-  font-family: "Cinzel", serif;
-  font-size: 40px;
-  font-weight: bold;
-  padding-top: 100px;
-  padding-right: 100px;
-  padding-left: 50px;
-  text-shadow: rgba(0, 0, 0, 0.637) 5px 0 5px;
-}
-.cont3 .item9 p.texto10 {
-  text-align: center;
-  font-family: "Permanent Marker", cursive;
-  font-size: 30px;
-  text-shadow: rgba(0, 0, 0, 0.637) 0px 0 5px;
-  font-weight: 50;
-  padding-right: 100px;
-  padding-left: 50px;
-}
-.cont3 .item9 a.boton5 {
-  text-align: center;
-  color: rgba(10, 10, 10, 0.884);
-  background: rgb(0, 36, 34);
-  background: linear-gradient(104deg, rgb(0, 36, 34) 0%, rgb(9, 111, 121) 35%, rgb(0, 183, 221) 100%);
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 55px;
-  text-decoration: none;
-  font-size: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: "Cinzel", serif;
-  text-shadow: rgba(0, 0, 0, 0.637) 1px 0 10px;
-  display: block;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 20px;
-}
-.cont3 .item9 .boton5:active {
-  background: rgba(0, 36, 34, 0.336);
-  background: linear-gradient(104deg, rgba(0, 36, 34, 0.473) 0%, rgba(9, 112, 121, 0.432) 35%, rgba(0, 184, 221, 0.562) 100%);
-  border: 3px solid rgba(0, 0, 0, 0.438);
-  color: rgba(0, 0, 0, 0.568627451);
-}
-.cont3 .video__propuesta video {
-  display: inline-block;
-  border: 1px solid rgba(0, 0, 0, 0.473);
-  box-shadow: #000000 0px 5px 20px;
-  border-radius: 360px;
-  opacity: 70%;
-  scale: 0.5px;
-  height: 550px;
-  margin-top: 90px;
-  transition: all 1.5s;
-}
-.cont3 .video__propuesta video:hover {
-  opacity: 100%;
-  scale: 1.05;
-  border-radius: 50px;
-}
-
 /*-----------!UBICACION!---------*/
 .cont4 .mapa iframe {
   width: 100%;
@@ -409,38 +336,4 @@ footer .redes i:hover {
 .boton3 .subir:hover {
   background-color: rgba(16, 155, 160, 0.662745098);
   color: rgba(255, 255, 255, 0.4117647059);
-}
-
-.cont10 {
-  background-image: url(./imgaltreno/2.jpg);
-  background-size: cover;
-}
-.cont10 .galeria {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  filter: grayscale(100%);
-}
-.cont10 .galeria ol li {
-  height: 30px;
-  border-radius: 50%;
-  background-color: #ff7b00;
-}
-.cont10 .galeria .carousel-control-prev i {
-  font-size: 35px;
-  color: #f58f00;
-}
-.cont10 .galeria .carousel-control-next i {
-  font-size: 35px;
-  color: #f58f00;
-}
-.cont10 .galeria img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
-.cont10 .galeria:hover {
-  filter: grayscale(0%);
 }/*# sourceMappingURL=estilos.css.map */
