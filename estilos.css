@@ -175,6 +175,7 @@ header .navbar-collapse .desplegable .dropdown-item:hover {
   padding-left: 20px;
 }
 
+/*--------!LIGAS----------*/
 #timeline {
   display: flex;
   background-color: #031625;
@@ -293,47 +294,141 @@ header .navbar-collapse .desplegable .dropdown-item:hover {
   font-family: Rajdhani;
 }
 
-/*-----------!UBICACION!---------*/
-.cont4 .mapa iframe {
-  width: 100%;
-  height: 400px;
+/*-----------!DESCUBRE MAS!---------*/
+.sec4 {
+  height: 1000px;
+}
+.sec4 .textE {
+  margin-top: 150px;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 35px;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+.sec4 .textD {
+  text-align: center;
+  font-family: cinzel;
+  font-size: 100px;
+  font-style: italic;
+}
+.sec4 .gridIg {
+  display: flex;
+  height: 1200px;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.sec4 .gridIg .foto1 {
+  height: 500px;
+}
+.sec4 .gridIg .foto1 .textPie1 {
+  font-size: 30px;
+  font-family: Rajdhani;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: rgba(128, 128, 128, 0.068);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-style: italic;
+  border-top: 5px solid rgba(211, 16, 16, 0.89);
+}
+.sec4 .gridIg .foto1:hover {
+  text-decoration: none !important;
+}
+.sec4 .gridIg .foto2 {
+  height: 500px;
+}
+.sec4 .gridIg .foto2 .textPie {
+  font-size: 30px;
+  font-family: Rajdhani;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: rgba(128, 128, 128, 0.068);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-style: italic;
+  border-top: 5px solid rgba(211, 16, 16, 0.89);
+}
+.sec4 .gridIg .foto2:hover {
+  text-decoration: none !important;
 }
 
 /*----------------!PIE DE PAGINA!------*/
-footer {
-  background-color: #000000;
-  color: aliceblue;
-  font-size: 15px;
+footer .fooA {
+  background-color: #292929;
+  height: 80px;
+  color: #000000;
   text-align: center;
-  padding: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: capitalize;
-  width: 100%;
-  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-footer .redes i {
-  font-size: 50px;
-  margin-bottom: 20px;
-  letter-spacing: 20px;
-  color: rgb(3, 6, 180);
+footer .fooA .textFa {
+  color: white;
+  font-family: Rajdhani;
+  font-weight: bold;
+  font-size: 25px;
 }
-footer .redes i:hover {
-  color: aquamarine;
+footer .fooA .textFa:hover {
+  text-decoration: none;
 }
-
-/*!------BOTON PARA SUBIR-----------!*/
-.boton3 .subir {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  background-color: rgba(19, 202, 202, 0.493);
+footer .fooB {
+  text-align: center;
+  background-color: #111;
+  height: 370px;
+  color: #ffffff;
+  font-style: italic;
+  font-family: Rajdhani;
+}
+footer .fooB .redIco {
+  color: white;
+  font-size: 17px;
+  background-color: #292929;
+  border-radius: 13px;
   padding: 15px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  border: 2px solid #020202;
-  border-radius: 40px;
+  margin-top: 45px;
+  margin-left: 30px;
 }
-.boton3 .subir:hover {
-  background-color: rgba(16, 155, 160, 0.662745098);
-  color: rgba(255, 255, 255, 0.4117647059);
+footer .fooB .redIco1 {
+  color: white;
+  font-size: 17px;
+  background-color: #292929;
+  border-radius: 13px;
+  padding: 15px;
+  margin-top: 45px;
+  margin-left: 0px;
+}
+footer .fooB .textInf {
+  margin-bottom: 10px;
+}
+footer .fooB .logo {
+  height: 60px;
+}
+footer .fooB .adv {
+  display: flex;
+  margin-left: 40%;
+  background-color: #292929;
+  height: 110px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  width: 500px;
+}
+footer .fooB .adv .imgAdv {
+  scale: 0.5px;
+  border: 1px solid white;
+}
+footer .fooB .adv .textAdv {
+  padding-top: 8px;
+  margin-left: 10px;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
 }/*# sourceMappingURL=estilos.css.map */
