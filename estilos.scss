@@ -547,5 +547,39 @@ footer{
     }
 }
 
-
-
+.slider {
+    padding-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.068);
+    margin-top: 200px;
+  
+    ul {
+      display: flex;
+      padding: 0;
+      width: 400%; 
+      animation: cambio 20s 1s infinite linear; 
+    }
+  
+    li {
+      width: 12.5%;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    img {
+      max-height: 70px;
+      width: 45%;
+      object-fit: contain; 
+      margin: 5px; 
+    }
+  }
+  
+  @keyframes cambio {
+    0% { margin-left: 0; } 
+    50% { margin-left: 100%; } 
+    50% { margin-left: -100%; } 
+  }
