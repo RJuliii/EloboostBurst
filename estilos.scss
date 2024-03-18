@@ -589,11 +589,11 @@ footer{
     body{
         width: 100vh;
     }
+
     /* Estilos para la sección Nosotros */
     .cont1 {
-        height: 300px;
+        height: 320px;
         flex-direction: column;
-
         .videoLol {
             padding-top: 25px;
             padding-left: 50px;
@@ -607,39 +607,46 @@ footer{
             }
         }
         .lolIco {
-            margin: 0px;
-            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.08;
+            width: 50%;
+            height: 100%;
+            z-index: 0;
         }
     }
 
     /* Estilos para la sección Conócenos */
     .cont3 {
-        height: auto;
+        height: 700px;
         padding: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
 
         .imgA {
             width: 100%;
             padding-left: 0;
+            padding-top: 100px;
         }
 
         .textA {
             padding-left: 0;
-            padding-top: 30px;
+            padding-top: 50px;
 
             .who {
-                font-size: 30px;
+                font-size: 35px;
             }
 
             .textB {
-                font-size: 20px;
+                font-size: 25px;
                 padding-right: 0;
             }
         }
 
         .redesContainer {
-            margin-top: 30px;
+            margin-top: 600px;
             margin-left: 20px;
             margin-right: 20px;
 
@@ -656,26 +663,158 @@ footer{
 
     /* Estilos para la sección Ligas */
     #timeline {
-        .tl-item {
-            width: 90%;
-            height: 400px;
-            min-height: auto;
-            margin-bottom: 20px;
-            font-size: 14px;
-
-            &:hover {
-                width: 100% !important;
+        display: flex;
+        background-color: #031625;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:hover {
+            .tl-item {
+                width: 23.3333%;
             }
         }
-
-        .tl-content {
-            margin: 0 10px;
-
-            h1 {
-                font-size: 18px;
+    
+    
+    .tl-item {
+        transform: translate3d(0, 0, 0);
+        position: relative;
+        width: 60%;
+        height: 60vh;
+        min-height: 600px;
+        color: #fff;
+        overflow: hidden;
+        transition: width 0.5s ease;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        &:before,
+        &:after {
+            transform: translate3d(0, 0, 0);
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    
+        &:after {
+            background: transparentize(#041f33, 0.15);
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+    
+        &:before {
+            background: linear-gradient(to bottom, rgba(177, 54, 54, 0) 0%, rgba(0, 0, 0, 1) 75%);
+            z-index: 1;
+            opacity: 0;
+            transform: translate3d(0, 0, 0) translateY(50%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    
+        &:hover {
+            width: 30% !important;
+    
+            &:after {
+                opacity: 0;
             }
+    
+            &:before {
+                opacity: 1;
+                transform: translate3d(0, 0, 0) translateY(0);
+                transition: opacity 1s ease, transform 1s ease 0.25s;
+            }
+    
+            .tl-content {
+                opacity: 1;
+                transform: translateY(0);
+                transition: all 0.75s ease 0.5s;
+            }
+    
+            .tl-bg {
+                filter: grayscale(0);
+            }
+            .textD{
+                font-family: Cinzel;
+            }
+            .btnComprar{
+                background-color: #a87b05;
+                padding: 10px;
+                font-family: Cinzel;
+                border: none;
+                border-radius: 2px;
+            }
+    }
+    }
+    
+    .tl-content {
+        transform: translate3d(0, 0, 0) translateY(25px);
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0 1.618em;
+        top: 30%;
+        opacity: 0;
+    
+        h1 {
+            font-family: Cinzel;
+            text-transform: uppercase;
+            color: #a87b05;
+            font-size: 1.44rem;
+            font-weight: normal;
+        }
+
+    }
+    .esmeralda{
+        top: 25%;
+    }
+    .diamante{
+        top: 28%;
+    }
+
+    
+    
+    .tl-year {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+        .f2{
+            font-family: Cinzel;
+            font-size: 25px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    
+        p {
+            font-family: Cinzel;
+            font-size: 5px;
+            font-weight: 600px;
+            line-height: 25px;
+            text-align: center;
         }
     }
+    
+    .tl-bg {
+        transform: translate3d(0, 0, 0);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: filter 0.5s ease;
+        filter: grayscale(100%);
+
+    }
+    .text4{
+        font-family: Rajdhani;
+    }
+    }
+    
 
     /* Estilos para la sección Descubre Más */
     .sec4 {
