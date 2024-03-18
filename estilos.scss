@@ -24,7 +24,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: x;
 
 }
 
@@ -588,29 +588,32 @@ footer{
 
   @media only screen and (max-width: 479px) and (min-width: 320px) {
     body{
-        width: 100vh;
+        width: 95vh;
         zoom: normal;
     }
 
     /* Estilos para la sección Nosotros */
     .cont1 {
-        height: 320px;
+        height: 450px;
         flex-direction: column;
         .videoLol {
             padding-top: 25px;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left:10px;
+            padding-right: 10px;
             height: 600px;
             padding-bottom: 50px;
             .lol {
                 height: auto;
-                margin-left: 0;
-                width: 100%;
+                width: 80%;
+                margin-top: 20px;
+                margin-left: 10%;
+
+                
             }
         }
         .lolIco {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             opacity: 0.08;
@@ -975,7 +978,7 @@ footer{
             }
             .adv{
                 display: flex;
-                margin-left: 13%;
+                margin-left: 25%;
                 background-color: #292929;
                 height: 110px;
                 padding-top: 2px;
