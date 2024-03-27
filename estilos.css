@@ -522,74 +522,160 @@ footer .fooB .adv .textAdv {
     margin-left: -100%;
   }
 }
-@media only screen and (max-width: 479px) and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 478px) {
   body {
-    width: 95vh;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
   }
-  /* Estilos para la sección Nosotros */
+  .swal2-title {
+    font-family: "Cinzel" !important; /* Cambia la fuente aquí */
+  }
+  /*--------------!HEADER!----------*/
+  header {
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  }
+  header .navbar-toggler {
+    border: none;
+  }
+  header .navbar-toggler i {
+    color: #a87b05;
+  }
+  header .navbar-collapse {
+    background-color: #000000;
+    padding-left: 20px;
+    margin: 0;
+    border-radius: 15px;
+  }
+  header .navbar-collapse .navegacion {
+    color: #a87b05 !important;
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+  }
+  header .navbar-collapse .navegacion:hover {
+    color: #ffffff !important;
+    font-size: 20px;
+  }
+  header .navbar-collapse .btn:focus {
+    box-shadow: none;
+  }
+  header .navbar-collapse .desplegable {
+    background-color: #000000;
+    margin: 0;
+    border-radius: 15px;
+  }
+  header .navbar-collapse .desplegable .dropdown-item {
+    color: #36d7ff !important;
+    font-family: "Cinzel", serif;
+    font-size: 15px;
+  }
+  header .navbar-collapse .desplegable .dropdown-item:hover {
+    background-color: #000000;
+    color: #ffffff !important;
+  }
+  /*--------------!NOSOTROS!----------*/
   .cont1 {
-    height: 450px;
-    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
   }
   .cont1 .videoLol {
-    padding-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 600px;
-    padding-bottom: 50px;
+    width: 0px;
   }
   .cont1 .videoLol .lol {
-    height: auto;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 10%;
+    height: 0px;
+    border: none;
+    box-shadow: none;
+  }
+  .cont1 .lol1 {
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    z-index: -2;
   }
   .cont1 .lolIco {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.08;
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 50%;
     z-index: 0;
   }
-  /* Estilos para la sección Conócenos */
+  /*------------------!CONOCENOS------------*/
   .cont3 {
-    height: 700px;
-    padding: 10px;
+    background-color: #ffffff;
+    height: 1050px;
+    background-size: cover;
+    padding: 20px;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat 4, 100px;
+    grid-gap: 10px;
   }
   .cont3 .imgA {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    padding-left: 0;
-    padding-top: 100px;
+    padding-left: 5px;
   }
   .cont3 .textA {
-    padding-left: 0;
-    padding-top: 50px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    padding-left: 10px;
+    padding-top: 270px;
+    text-align: center;
   }
   .cont3 .textA .who {
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cinzel;
   }
   .cont3 .textA .textB {
-    font-size: 25px;
-    padding-right: 0;
+    font-size: 22px;
+    font-style: italic;
+    font-family: Rajdhani;
+    padding-right: 110px;
+    text-align: left;
+    padding-right: 0px;
   }
   .cont3 .redesContainer {
-    margin-top: 600px;
-    margin-left: 20px;
-    margin-right: 20px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    height: 60px;
+    margin-top: 750px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .cont3 .redesContainer .textC {
-    font-size: 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Cinzel;
+    font-size: 20px;
+    letter-spacing: 3px;
   }
   .cont3 .redesContainer .textC .redIco {
-    font-size: 20px;
-    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 20px;
   }
-  /* LIGAS */
+  /*--------!LIGAS----------*/
   #timeline {
     display: flex;
     background-color: #031625;
@@ -655,11 +741,13 @@ footer .fooB .adv .textAdv {
   }
   #timeline .tl-item:hover .textD {
     font-family: Cinzel;
+    font-size: 5px;
   }
   #timeline .tl-item:hover .btnComprar {
     background-color: #a87b05;
     padding: 10px;
     font-family: Cinzel;
+    font-size: 5px;
     border: none;
     border-radius: 2px;
   }
@@ -669,41 +757,28 @@ footer .fooB .adv .textAdv {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 30%;
+    top: 55%;
     opacity: 0;
   }
   #timeline .tl-content h1 {
     font-family: Cinzel;
     text-transform: uppercase;
     color: #a87b05;
-    font-size: 1.44rem;
+    font-size: 5px;
     font-weight: normal;
-  }
-  #timeline .esmeralda {
-    top: 25%;
-  }
-  #timeline .diamante {
-    top: 28%;
   }
   #timeline .tl-year {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
   }
-  #timeline .tl-year .f2 {
-    font-family: Cinzel;
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
   #timeline .tl-year p {
     font-family: Cinzel;
-    font-size: 5px;
+    font-size: 1.728rem;
     font-weight: 600px;
-    line-height: 25px;
-    text-align: center;
+    line-height: 0;
   }
   #timeline .tl-bg {
     transform: translate3d(0, 0, 0);
@@ -712,8 +787,7 @@ footer .fooB .adv .textAdv {
     height: 100%;
     top: 0;
     left: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
     transition: filter 0.5s ease;
     filter: grayscale(100%);
@@ -721,46 +795,45 @@ footer .fooB .adv .textAdv {
   #timeline .text4 {
     font-family: Rajdhani;
   }
-  /* DESCUBRE MAS */
+  /*-----------!DESCUBRE MAS!---------*/
   .sec4 {
-    height: 1500px;
+    height: 1350px;
   }
   .sec4 .textE {
-    margin-top: 150px;
+    margin-top: 70px;
     text-align: center;
     font-family: Cinzel;
-    font-size: 40px;
+    font-size: 50px;
     font-style: italic;
     margin-bottom: 0px;
   }
   .sec4 .textD {
     text-align: center;
     font-family: cinzel;
-    font-size: 85px;
+    font-size: 35px;
     font-style: italic;
   }
   .sec4 .gridIg {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    width: 100%;
     justify-items: center;
     align-items: center;
+    margin-top: 0px;
   }
   .sec4 .gridIg .foto1 {
-    height: 500px;
+    height: 400px;
   }
   .sec4 .gridIg .foto1 .textPie1 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: Rajdhani;
     text-decoration: none;
     text-align: center;
     color: black;
     background-color: rgba(128, 128, 128, 0.068);
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-style: italic;
     border-top: 5px solid rgba(211, 16, 16, 0.89);
   }
@@ -768,53 +841,69 @@ footer .fooB .adv .textAdv {
     text-decoration: none !important;
   }
   .sec4 .gridIg .foto2 {
-    height: 500px;
+    height: 400px;
   }
   .sec4 .gridIg .foto2 .textPie {
-    font-size: 30px;
+    font-size: 25px;
     font-family: Rajdhani;
     text-decoration: none;
     text-align: center;
     color: black;
     background-color: rgba(128, 128, 128, 0.068);
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-style: italic;
     border-top: 5px solid rgba(211, 16, 16, 0.89);
   }
   .sec4 .gridIg .foto2:hover {
     text-decoration: none !important;
   }
-  .slider {
-    padding-top: 15px;
+  .cont2 {
+    position: relative;
     width: 100%;
+    height: 100%;
+  }
+  .cont2 .videoLol {
+    position: relative;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    background-color: rgba(128, 128, 128, 0.068);
-    margin-top: 200px;
-  }
-  .slider ul {
     display: flex;
-    padding: 0;
-    width: 400%;
-    animation: cambio 20s 1s infinite linear;
-  }
-  .slider li {
-    width: 12.5%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
-  .slider img {
-    max-height: 70px;
-    width: 45%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin: 5px;
+  .cont2 .videoLol video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
+  .cont2 .videoLol .butLol {
+    width: 200px;
+    text-align: center;
+    font-family: Rajdhani;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #a87a05;
+    color: rgb(0, 0, 0);
+    box-shadow: -7px 17px 51px 4px rgba(0, 0, 0, 0.79);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 1s, color 0.8s, border-radius, 0.7s;
+  }
+  .cont2 .videoLol .butLol:hover {
+    background-color: rgba(168, 122, 5, 0.6235294118);
+    border-color: black;
+    border-radius: 15px;
+  }
+  /*----------------!PIE DE PAGINA!------*/
   footer .fooA {
     background-color: #292929;
     height: 80px;
@@ -823,12 +912,13 @@ footer .fooB .adv .textAdv {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
   }
   footer .fooA .textFa {
     color: white;
     font-family: Rajdhani;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 5px;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -871,19 +961,428 @@ footer .fooB .adv .textAdv {
   }
   footer .fooB .adv {
     display: flex;
-    margin-left: 150px;
+    margin-left: 0%;
     background-color: #292929;
-    height: 110px;
+    height: 135px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 5px;
-    width: 500px;
+    width: 100%;
   }
   footer .fooB .adv .imgAdv {
     scale: 0.5px;
     border: 1px solid white;
   }
   footer .fooB .adv .textAdv {
+    padding-top: 8px;
+    margin-left: 10px;
+    text-align: left;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .slider {
+    padding-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.068);
+    margin-top: 200px;
+  }
+  .slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s 1s infinite linear;
+  }
+  .slider li {
+    width: 12.5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .slider img {
+    max-height: 70px;
+    width: 45%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 5px;
+  }
+  @keyframes cambio {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 100%;
+    }
+    50% {
+      margin-left: -100%;
+    }
+  }
+}
+@media only screen and (min-width: 920px) and (max-width: 478px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    /* Estilos para la sección Nosotros */
+    /* Estilos para la sección Conócenos */
+    /* LIGAS */
+    /* DESCUBRE MAS */
+  }
+  body .cont1 {
+    height: 450px;
+    flex-direction: column;
+  }
+  body .cont1 .videoLol {
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 600px;
+    padding-bottom: 50px;
+  }
+  body .cont1 .videoLol .lol {
+    height: auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  body .cont1 .lolIco {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+  }
+  body .cont3 {
+    height: 700px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+  body .cont3 .imgA {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 100px;
+  }
+  body .cont3 .textA {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  body .cont3 .textA .who {
+    font-size: 35px;
+  }
+  body .cont3 .textA .textB {
+    font-size: 25px;
+    padding-right: 0;
+  }
+  body .cont3 .redesContainer {
+    margin-top: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  body .cont3 .redesContainer .textC {
+    font-size: 16px;
+  }
+  body .cont3 .redesContainer .textC .redIco {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  body #timeline {
+    display: flex;
+    background-color: #031625;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body #timeline:hover .tl-item {
+    width: 23.3333%;
+  }
+  body #timeline .tl-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 60%;
+    height: 60vh;
+    min-height: 600px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body #timeline .tl-item:before, body #timeline .tl-item:after {
+    transform: translate3d(0, 0, 0);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body #timeline .tl-item:after {
+    background: rgba(4, 31, 51, 0.85);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  body #timeline .tl-item:before {
+    background: linear-gradient(to bottom, rgba(177, 54, 54, 0) 0%, rgb(0, 0, 0) 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  body #timeline .tl-item:hover {
+    width: 30% !important;
+  }
+  body #timeline .tl-item:hover:after {
+    opacity: 0;
+  }
+  body #timeline .tl-item:hover:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) translateY(0);
+    transition: opacity 1s ease, transform 1s ease 0.25s;
+  }
+  body #timeline .tl-item:hover .tl-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.75s ease 0.5s;
+  }
+  body #timeline .tl-item:hover .tl-bg {
+    filter: grayscale(0);
+  }
+  body #timeline .tl-item:hover .textD {
+    font-family: Cinzel;
+  }
+  body #timeline .tl-item:hover .btnComprar {
+    background-color: #a87b05;
+    padding: 10px;
+    font-family: Cinzel;
+    border: none;
+    border-radius: 2px;
+  }
+  body #timeline .tl-content {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 30%;
+    opacity: 0;
+  }
+  body #timeline .tl-content h1 {
+    font-family: Cinzel;
+    text-transform: uppercase;
+    color: #a87b05;
+    font-size: 1.44rem;
+    font-weight: normal;
+  }
+  body #timeline .esmeralda {
+    top: 25%;
+  }
+  body #timeline .diamante {
+    top: 28%;
+  }
+  body #timeline .tl-year {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+  }
+  body #timeline .tl-year .f2 {
+    font-family: Cinzel;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  body #timeline .tl-year p {
+    font-family: Cinzel;
+    font-size: 5px;
+    font-weight: 600px;
+    line-height: 25px;
+    text-align: center;
+  }
+  body #timeline .tl-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+  }
+  body #timeline .text4 {
+    font-family: Rajdhani;
+  }
+  body .sec4 {
+    height: 1500px;
+  }
+  body .sec4 .textE {
+    margin-top: 150px;
+    text-align: center;
+    font-family: Cinzel;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+  body .sec4 .textD {
+    text-align: center;
+    font-family: cinzel;
+    font-size: 25px;
+    font-style: italic;
+  }
+  body .sec4 .gridIg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+  body .sec4 .gridIg .foto1 {
+    height: 500px;
+  }
+  body .sec4 .gridIg .foto1 .textPie1 {
+    font-size: 30px;
+    font-family: Rajdhani;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.068);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-style: italic;
+    border-top: 5px solid rgba(211, 16, 16, 0.89);
+  }
+  body .sec4 .gridIg .foto1:hover {
+    text-decoration: none !important;
+  }
+  body .sec4 .gridIg .foto2 {
+    height: 500px;
+  }
+  body .sec4 .gridIg .foto2 .textPie {
+    font-size: 30px;
+    font-family: Rajdhani;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.068);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-style: italic;
+    border-top: 5px solid rgba(211, 16, 16, 0.89);
+  }
+  body .sec4 .gridIg .foto2:hover {
+    text-decoration: none !important;
+  }
+  body .slider {
+    padding-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.068);
+    margin-top: 200px;
+  }
+  body .slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s 1s infinite linear;
+  }
+  body .slider li {
+    width: 12.5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  body .slider img {
+    max-height: 70px;
+    width: 45%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 5px;
+  }
+  body footer .fooA {
+    background-color: #292929;
+    height: 80px;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body footer .fooA .textFa {
+    color: white;
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  body footer .fooA .textFa:hover {
+    text-decoration: none;
+    background-color: #585858;
+    border-radius: 10px;
+  }
+  body footer .fooB {
+    text-align: center;
+    background-color: #111;
+    height: 370px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: Rajdhani;
+  }
+  body footer .fooB .redIco {
+    color: white;
+    font-size: 17px;
+    background-color: #292929;
+    border-radius: 13px;
+    padding: 15px;
+    margin-top: 45px;
+    margin-left: 30px;
+  }
+  body footer .fooB .redIco1 {
+    color: white;
+    font-size: 17px;
+    background-color: #292929;
+    border-radius: 13px;
+    padding: 15px;
+    margin-top: 45px;
+    margin-left: 0px;
+  }
+  body footer .fooB .textInf {
+    margin-bottom: 10px;
+  }
+  body footer .fooB .logo {
+    height: 60px;
+  }
+  body footer .fooB .adv {
+    display: flex;
+    margin-left: 10px;
+    background-color: #292929;
+    height: 110px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    width: 50px;
+  }
+  body footer .fooB .adv .imgAdv {
+    scale: 0.5px;
+    border: 1px solid white;
+  }
+  body footer .fooB .adv .textAdv {
     padding-top: 8px;
     margin-left: 10px;
     text-align: left;
