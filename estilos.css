@@ -690,8 +690,8 @@ footer .fooB .adv .textAdv {
     transform: translate3d(0, 0, 0);
     position: relative;
     width: 60%;
-    height: 60vh;
-    min-height: 600px;
+    height: 55vh;
+    min-height: 0px;
     color: #fff;
     overflow: hidden;
     transition: width 0.5s ease;
@@ -735,19 +735,22 @@ footer .fooB .adv .textAdv {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.75s ease 0.5s;
+    margin: 5px;
   }
   #timeline .tl-item:hover .tl-bg {
     filter: grayscale(0);
   }
   #timeline .tl-item:hover .textD {
     font-family: Cinzel;
+    font-size: 12px;
   }
   #timeline .tl-item:hover .btnComprar {
     background-color: #a87b05;
-    padding: 10px;
+    padding: 5px;
     font-family: Cinzel;
     border: none;
     border-radius: 2px;
+    font-size: 10px;
   }
   #timeline .tl-content {
     transform: translate3d(0, 0, 0) translateY(25px);
@@ -762,7 +765,7 @@ footer .fooB .adv .textAdv {
     font-family: Cinzel;
     text-transform: uppercase;
     color: #a87b05;
-    font-size: 1.44rem;
+    font-size: 15px;
     font-weight: normal;
   }
   #timeline .esmeralda {
@@ -783,6 +786,8 @@ footer .fooB .adv .textAdv {
     font-size: 15px;
     margin-bottom: 10px;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   #timeline .tl-year p {
     font-family: Cinzel;

@@ -782,8 +782,8 @@ footer{
         transform: translate3d(0, 0, 0);
         position: relative;
         width: 60%;
-        height: 60vh;
-        min-height: 600px;
+        height: 55vh;
+        min-height: 0px;
         color: #fff;
         overflow: hidden;
         transition: width 0.5s ease;
@@ -832,6 +832,7 @@ footer{
                 opacity: 1;
                 transform: translateY(0);
                 transition: all 0.75s ease 0.5s;
+                margin: 5px;
             }
     
             .tl-bg {
@@ -839,13 +840,16 @@ footer{
             }
             .textD{
                 font-family: Cinzel;
+                font-size: 12px;
             }
             .btnComprar{
                 background-color: #a87b05;
-                padding: 10px;
+                padding: 5px;
                 font-family: Cinzel;
                 border: none;
                 border-radius: 2px;
+                font-size: 10px;
+               
             }
     }
     }
@@ -863,7 +867,7 @@ footer{
             font-family: Cinzel;
             text-transform: uppercase;
             color: #a87b05;
-            font-size: 1.44rem;
+            font-size: 15px;
             font-weight: normal;
         }
 
@@ -888,6 +892,9 @@ footer{
             font-size: 15px;
             margin-bottom: 10px;
             text-align: center;
+            padding-left: 5px;
+            padding-right: 5px;
+        
 
             
         }
