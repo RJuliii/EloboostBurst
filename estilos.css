@@ -603,12 +603,12 @@ footer .fooB .adv .textAdv {
   }
   .cont1 .lolIco {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.08;
     width: 40%;
-    height: 50%;
+    height: 70%;
     z-index: 0;
   }
   /*------------------!CONOCENOS------------*/
