@@ -652,11 +652,11 @@ footer .fooB .adv .textAdv {
   }
   .cont3 .redesContainer {
     grid-column: 1/3;
-    grid-row: 1/3;
+    grid-row: 2/3;
     height: 60px;
-    margin-top: 750px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 650px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .cont3 .redesContainer .textC {
     background-color: black;
@@ -666,13 +666,13 @@ footer .fooB .adv .textAdv {
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: Cinzel;
-    font-size: 20px;
+    font-size: 12px;
     letter-spacing: 3px;
   }
   .cont3 .redesContainer .textC .redIco {
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 17px;
     padding-left: 20px;
   }
   /*--------!LIGAS----------*/
@@ -741,13 +741,11 @@ footer .fooB .adv .textAdv {
   }
   #timeline .tl-item:hover .textD {
     font-family: Cinzel;
-    font-size: 5px;
   }
   #timeline .tl-item:hover .btnComprar {
     background-color: #a87b05;
     padding: 10px;
     font-family: Cinzel;
-    font-size: 5px;
     border: none;
     border-radius: 2px;
   }
@@ -757,28 +755,41 @@ footer .fooB .adv .textAdv {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 30%;
     opacity: 0;
   }
   #timeline .tl-content h1 {
     font-family: Cinzel;
     text-transform: uppercase;
     color: #a87b05;
-    font-size: 5px;
+    font-size: 1.44rem;
     font-weight: normal;
+  }
+  #timeline .esmeralda {
+    top: 25%;
+  }
+  #timeline .diamante {
+    top: 28%;
   }
   #timeline .tl-year {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
   }
+  #timeline .tl-year .f2 {
+    font-family: Cinzel;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
   #timeline .tl-year p {
     font-family: Cinzel;
-    font-size: 1.728rem;
+    font-size: 5px;
     font-weight: 600px;
-    line-height: 0;
+    line-height: 25px;
+    text-align: center;
   }
   #timeline .tl-bg {
     transform: translate3d(0, 0, 0);
@@ -787,7 +798,8 @@ footer .fooB .adv .textAdv {
     height: 100%;
     top: 0;
     left: 0;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-position: center center;
     transition: filter 0.5s ease;
     filter: grayscale(100%);
