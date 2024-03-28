@@ -783,7 +783,7 @@ footer .fooB .adv .textAdv {
   }
   #timeline .tl-year .f2 {
     font-family: Cinzel;
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 10px;
     text-align: center;
     padding-left: 5px;
@@ -898,7 +898,7 @@ footer .fooB .adv .textAdv {
        object-fit: cover;
   }
   .cont2 .videoLol .butLol {
-    width: 200px;
+    width: 100px;
     text-align: center;
     font-family: Rajdhani;
     position: absolute;
@@ -906,8 +906,8 @@ footer .fooB .adv .textAdv {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
-    padding: 5px 10px;
-    font-size: 18px;
+    padding: 2px 2px;
+    font-size: 12px;
     background-color: #a87a05;
     color: rgb(0, 0, 0);
     box-shadow: -7px 17px 51px 4px rgba(0, 0, 0, 0.79);
@@ -923,7 +923,7 @@ footer .fooB .adv .textAdv {
   /*----------------!PIE DE PAGINA!------*/
   footer .fooA {
     background-color: #292929;
-    height: 80px;
+    height: 65px;
     color: #000000;
     text-align: center;
     display: flex;
@@ -935,7 +935,7 @@ footer .fooB .adv .textAdv {
     color: white;
     font-family: Rajdhani;
     font-weight: bold;
-    font-size: 5px;
+    font-size: 15px;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -972,18 +972,19 @@ footer .fooB .adv .textAdv {
   }
   footer .fooB .textInf {
     margin-bottom: 10px;
+    font-size: 14px;
   }
   footer .fooB .logo {
-    height: 60px;
+    height: 65px;
   }
   footer .fooB .adv {
     display: flex;
     margin-left: 0%;
     background-color: #292929;
-    height: 135px;
+    height: 110px;
     padding-top: 2px;
     padding-bottom: 2px;
-    border-radius: 5px;
+    border-radius: 0px;
     width: 100%;
   }
   footer .fooB .adv .imgAdv {
@@ -996,6 +997,7 @@ footer .fooB .adv .textAdv {
     text-align: left;
     font-style: normal;
     font-weight: bold;
+    font-size: 13px;
   }
   .slider {
     padding-top: 15px;
@@ -1011,7 +1013,7 @@ footer .fooB .adv .textAdv {
     animation: cambio 20s 1s infinite linear;
   }
   .slider li {
-    width: 12.5%;
+    width: 12%;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -1019,8 +1021,8 @@ footer .fooB .adv .textAdv {
     flex-wrap: wrap;
   }
   .slider img {
-    max-height: 70px;
-    width: 45%;
+    max-height: 50px;
+    width: 40%;
     -o-object-fit: contain;
        object-fit: contain;
     margin: 5px;
