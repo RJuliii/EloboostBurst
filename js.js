@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
               confirmButtonColor: "#a87b05",
               denyButtonColor: "black",
               preConfirm: () => {
-                window.location.href = 'https://www.instagram.com/direct/t/17843605086167722';
+                window.location.href = 'https://ig.me/m/eloboostburst';
               }
           });
       });
